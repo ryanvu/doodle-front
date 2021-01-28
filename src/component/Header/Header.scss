@@ -1,0 +1,44 @@
+@use '../../partials/mixins' as *;
+
+.header{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__nav{
+        display: none;
+        list-style: none;
+        gap: 0.5rem;
+        @include tablet{
+            display: flex;
+        }
+
+        &-item{
+            text-decoration: none;
+            
+            &:visited{
+                color: black;
+            }
+        }
+    }
+
+    &__toggle{
+        @include tablet{
+            display: none;
+        }
+    }
+
+    &__hb{
+        @include tablet{
+            display: none;
+        }
+    }
+    &__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+}

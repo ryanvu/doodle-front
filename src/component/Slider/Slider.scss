@@ -1,0 +1,35 @@
+@use '../../partials/mixins' as *;
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 400px;
+    &__input{
+        -webkit-appearance: none;
+        margin: 10px 0;
+        width: 100%;
+
+        &:focus{
+            outline: none;
+        }
+
+        &::-webkit-slider-runnable-track{
+            cursor: pointer;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        &-wrap{
+            margin-top: 1rem;
+            box-shadow: 6px 6px 16px rgba($color: #D1CDC7, $alpha: 0.5),
+                        -6px -6px 16px rgba($color: #FFFFFF, $alpha: 0.5);
+            border-radius: 10px;
+        }
+
+        &::-webkit-slider-thump{
+            -webkit-appearance: none;
+            appearance: none;
+        }
+    }
+}

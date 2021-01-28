@@ -1,0 +1,29 @@
+.color{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 1rem;
+
+    &-card{
+        border-radius: 8px;
+        padding: 0.25rem;
+        margin-right: 0.25rem;
+        box-shadow: 6px 6px 16px rgba($color: #D1CDC7, $alpha: 0.5),
+                    -6px -6px 16px rgba($color: #FFFFFF, $alpha: 0.5);
+    }
+
+    &-box{
+        border-radius: 20px;
+        height: 15px;
+        width: 15px;
+        margin: 0.25rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:active{
+            cursor: grabbing;
+        }
+    }
+}

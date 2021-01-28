@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 import axios from 'axios';
 import Cookie from 'js-cookie';
 const Login = () => {
@@ -21,7 +21,7 @@ const Login = () => {
         }
         axios.post('http://localhost:5000/login', logInfo, { withCredentials: true })
         .then(res => {
-            const id = res.data.user.sessionid;
+            // const id = res.data.user.sessionid;
             const cookie = Cookie.get('connect.sid')
             console.log(cookie)
             

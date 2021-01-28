@@ -1,0 +1,9 @@
+@use '../../partials/mixins' as *;
+
+.canvas{
+    border-radius: 8px;
+
+    &:hover{
+        cursor: crosshair;
+    }
+}
